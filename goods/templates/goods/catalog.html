@@ -83,9 +83,9 @@
                     <p class="card-text">
                         {% autoescape off %}
                             {% if product.bodyline %}
-                            {{product.bodyline|truncatechars:100}}
+                            {{product.bodyline|truncatechars:30}}
                             {% else %}
-                            {{ product.description|truncatechars:35 }}
+                            {{ product.description|truncatechars:30 }}
                             {% endif %}
                         {% endautoescape %}
                     </p>
@@ -147,7 +147,7 @@
 {% block footer %}
 <footer class="py-4 bg-dark">
     <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Home Python Hub Studio 2023</p>
+        <p class="m-0 text-center text-white">&copy; Все права защищены ООО "HDKM Inc" 2024</p>
     </div>
 </footer>
 {% endblock  %}
