@@ -16,6 +16,5 @@ def about(request):
     context = {
         'title': '12 стульев - О нас',
         'content': "О нас",
-        'text_on_page': "Это новый текст"
     }
     return render(request, 'main/about.html', context)
